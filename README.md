@@ -79,5 +79,8 @@ Open [http://localhost:8443](http://localhost:8443) in your browser to view the 
 Built with passion for web application development and powered by modern generative AI. Special thanks to AI pair-programming tools for assistance with design polish and TypeScript state management!
 
 ---
+DEMO VIDEO:--->
+https://drive.google.com/file/d/1VbUYT_X4jWxKQCcpTB9ZyIicTMHqYbO5/view?usp=sharing
+
 
 *NutriChef AI &copy; 2026. Made with ❤️ for healthy home cooking.*
