@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 8px);
+}
+
+/* Official NutriChef Design System Palette */
+:root {
+  --background: #F4FBF4;        /* Soft Clean Mint Tint */
+  --foreground: #1E1E1E;        /* Text Dark */
+  --card: #FFFFFF;              /* Clean White Card */
+  --card-foreground: #1E1E1E;
+  --primary: #43B02A;           /* Primary Green */
+  --primary-dark: #2E7D32;      /* Primary Green Dark */
+  --primary-light: #8BC34A;     /* Secondary Green */
+  --primary-bg: #E8F5E9;        /* Background Green Tint */
+  --primary-foreground: #FFFFFF;
+  --secondary: #8BC34A;
+  --secondary-foreground: #1E1E1E;
+  --muted: #E8F5E9;
+  --muted-foreground: #757576;  /* Text Muted */
+  --accent: #FF8C42;           /* Primary Orange */
+  --accent-yellow: #FFC107;    /* Accent Yellow */
+  --accent-foreground: #FFFFFF;
+  --border: #E0EFE0;           /* Soft Border */
+  --ring: #43B02A;
+  --radius: 24px;
+}
+
+.dark {
+  --background: #0B1912;        /* Dark Slate Forest */
+  --foreground: #FFFFFF;        /* Text White */
+  --card: #13261C;              /* Dark Green Card */
+  --card-foreground: #FFFFFF;
+  --primary: #43B02A;
+  --primary-dark: #2E7D32;
+  --primary-light: #8BC34A;
+  --primary-bg: #1A3D2A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #8BC34A;
+  --secondary-foreground: #FFFFFF;
+  --muted: #1A3D2A;
+  --muted-foreground: #94A3B8;
+  --accent: #FF8C42;
+  --accent-yellow: #FFC107;
+  --accent-foreground: #FFFFFF;
+  --border: #1F3B2B;           /* Dark Mode Border */
+  --ring: #43B02A;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(67, 176, 42, 0.3) transparent;
+}
+*::-webkit-scrollbar { width: 6px; height: 6px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background-color: rgba(67, 176, 42, 0.3); border-radius: 9999px; }
+
+html, body {
+  font-family: 'Poppins', 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glass & Card styles */
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid #E0EFE0;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(67, 176, 42, 0.04);
+}
+
+.dark .glass-card {
+  background: #13261C;
+  border-color: #1F3B2B;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #E0EFE0;
+}
+
+.dark .glass-nav {
+  background: rgba(19, 38, 28, 0.95);
+  border-bottom-color: #1F3B2B;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.nutrichef-badge-easy {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  font-weight: 700;
+}
+
+.dark .nutrichef-badge-easy {
+  background-color: #1A3D2A;
+  color: #8BC34A;
+}
+
+.nutrichef-badge-medium {
+  background-color: #FFF3E0;
+  color: #E65100;
+  font-weight: 700;
+}
+
+.dark .nutrichef-badge-medium {
+  background-color: #3E2723;
+  color: #FF8C42;
+}
+
+.nutrichef-badge-hard {
+  background-color: #FFEBEE;
+  color: #C62828;
+  font-weight: 700;
+}
+
+.dark .nutrichef-badge-hard {
+  background-color: #3C1F24;
+  color: #EF5350;
+}
+
+.nutrichef-ai-badge {
+  background: linear-gradient(135deg, #FF8C42, #FF7000);
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  border-radius: 6px;
+  padding: 2px 7px;
+  box-shadow: 0 2px 6px rgba(255, 140, 66, 0.35);
+}
